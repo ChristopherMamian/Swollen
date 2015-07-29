@@ -1,1 +1,5 @@
-%h1 Workouts#index
+
+- @workouts.each do |workout|
+	%h2= link_to workout.date, workout
+	%p= workout.date
+	%p= workout.workout
